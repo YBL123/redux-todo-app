@@ -19,8 +19,8 @@ const todoList = [
 function App() {
   return (
     <div className="app">
-      <div className="app-container">
-        <div className="app-todo-container">
+      <div className="app__container">
+        <div className="app__todoContainer">
           {todoList.map((item) => (
             <TodoItem 
             name={item.item} 
@@ -29,9 +29,8 @@ function App() {
             />
           ))}
         </div>
+        <Input />
       </div>
-
-      <Input />
     </div>
   );
 }
