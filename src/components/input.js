@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './Input.css'
 
-const input = () => {
+const Input = () => {
+  const [input, setInput] = useState('')
+
+  const addTodo = () => {
+
+  }
+
   return (
-    <div>
-      
+    <div className='input'>
+      <input type="text" value={input} onChange={e=>setInput(e.target.value)}/>
+      <button onClick={addTodo}>Add!</button>
     </div>
   )
 }
 
-export default input
+export default Input
