@@ -11,9 +11,25 @@ const todoSlice = createSlice({
     saveTodo: (state, action) => {
       state.todoList.push(action.payload);
     },
-  },
+
+    setCheck: (state, action) => {
+      state.todoList.map(item => {
+        if (action.payload === item.id) {
+          if (item.done === true) {
+            // if its done 
+            item.done = false
+          } else {
+            // if its not done
+            item.done = true
+          }
+        }
+      })
+    }
+  }
 });
 
-export const { saveTodo } = todoSlice.actions;
+export const { saveTodo, setCheck } = todoSlice.actions;
+
+export const selectTodoList = state => state.todos.todoList
 
 export default todoSlice.reducer;
