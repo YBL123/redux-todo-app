@@ -19,7 +19,7 @@ const todoList = [
 function App() {
   return (
     <div className="app">
-      <div className="app-containter">
+      <div className="app-container">
         <div className="app-todo-container">
           {todoList.map((item) => (
             <TodoItem 

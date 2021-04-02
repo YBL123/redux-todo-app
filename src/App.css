@@ -6,3 +6,11 @@
   place-items: center;
 }
 
+.app-container {
+  height: 700px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: palegreen;
+}

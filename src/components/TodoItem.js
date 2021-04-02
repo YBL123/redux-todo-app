@@ -1,12 +1,27 @@
-import React from 'react'
-import './TodoItem.css'
+import React from 'react';
+import './TodoItem.css';
 
-const TodoItem = ({name, done, id}) => {
+import Checkbox from '@material-ui/core/Checkbox';
+
+const TodoItem = ({ name, done, id }) => {
+  const handleCheck = () => {
+    
+  }
+
   return (
-    <div className='todoItem'>
-      <p className={done && 'todoItem--'}>{name}</p>
-    </div>
-  )
-}
+    <div className="todoItem">
 
-export default TodoItem
+      <Checkbox
+        checked={done}
+        color="primary"
+        onChange={handleCheck}
+        inputProps={{ 'aria-label': 'secondary checkbox' }}
+      />
+
+      {/* adds strikethrough when done */}
+      <p className={done && 'todoItem--done'}>{name}</p>
+    </div>
+  );
+};
+
+export default TodoItem;
