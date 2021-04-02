@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   width: 80%;
-  background-color: lightcoral;
+  background-color: rgb(190, 236, 238);
   margin: 6px 4px;
   height: 40px;
   border-radius: 12px;
+  color: rgb(6, 72, 77);
 }
 
 .todoItem>p {

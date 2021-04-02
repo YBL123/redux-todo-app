@@ -2,7 +2,7 @@
   height: 50px;
   width: 80%;
   border-radius: 12px;
-  background-color: white;
+  background-color: rgb(225, 244, 245);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,9 +17,10 @@ input {
 
 button {
   margin-right: 8px;
-  background-color: rgb(214, 213, 213);
+  background-color: rgb(24, 119, 122);
   border: none;
   border-radius: 10px;
   height: 30px;
   width: 50px;
+  color: white;
 }
